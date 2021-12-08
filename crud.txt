@@ -1,0 +1,28 @@
+﻿create table musica(
+nro_de_bi integer  not null primary key,
+nome varchar(100) not null,
+morada varchar (150) not null,
+numero_telefone varchar not null,
+);
+
+create table inicio_carreira(
+endereco varchar (100) not null primary key,
+telefone varchar (200) not null 
+);
+
+create table disco_grav_campanha(
+titulo varchar (50) not null,
+data_dia date  not null,
+formato varchar (50) not null,
+identificador_disco varchar (100) not null
+);
+
+create table musica_grav_campanha(
+titulo varchar(50) not null primary key,
+autor varchar(100) not null
+);
+
+create table instrumento (
+nome varchar (50) not null primary key,
+cod_interno smallint not null
+);
